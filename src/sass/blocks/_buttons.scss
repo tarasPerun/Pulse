@@ -1,0 +1,26 @@
+.button {
+    width: 153px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background: $main-color;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.promo__order_button {
+    width: 303px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    
+}
