@@ -10,4 +10,17 @@
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
-// @import 'blocks/titles';
+@import 'blocks/titles';
+
+@media(max-width: 1200px) {}
+@media(max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media(max-width: 767px) {
+    .container {
+        max-width: 540px;
+    } 
+}
+@media(max-width: 575px) {}

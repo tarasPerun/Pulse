@@ -1,47 +1,76 @@
 .advantages {
     min-height: 470px;
     background: url('../img/backgrounds/bg3.jpg') center (center / cover) no-repeat; 
-    padding-top: 71px;
-    &__block {
+    padding: 70px 0 80px 0;
+    &__wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-top: 60px;
-        text-align: center;
-        &__items {
-            width: 28%;
-            height: 300px;
-            display: flex;
-            justify-content: flex-start;
-            flex-direction: column;
-            align-items: center;
-            &_subtitle {
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 29px;
-                margin-top: 35px;
-            }
-            &_text {
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 18px;
-                a {
-                    color: $main-color;
-                    
-                    }
-                a:hover {
-                    text-decoration: none;
-                 }
-            }
-        }
+        margin-top: 65px;
     }
-    &__title {
-        color: #000;
-        text-align: center;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 238px;
+    }
+    &__subtitle {
         font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-
+        font-size: 18px;
+        margin-top: 38px;
+        color: #0d0d0d;
+    }
+    &__descr {
+        margin-top: 26px;
+        color: #0d0d0d;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+            
+            }
+        
     }
 }
+@media(max-width: 991px) {
+    .advantages {
+        &__item {
+            max-width: 200px;
+        }
+    }
+}
+@media(max-width: 767px) {
+    .advantages {
+    &__wrapper {
+        flex-direction: column;
+        align-items:center;
+        margin-top: 60px;
+    }
+    &__item {
+        max-width: 450px;
+    }
+    
+    &__descr {
+        margin-top: 13px;
+        font-size: 16px;
+        margin-bottom: 30px;
+        
+    }
+    }
+}
+@media(max-width: 575px) {
+    &__wrapper {
+        margin-top: 50px;
+    }
+    &__item {
+        max-width: 260px;
+    }
+    &__descr {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}
+    
+    
+
