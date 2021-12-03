@@ -189,6 +189,8 @@ h2 {
 
 .advantages {
   min-height: 470px;
+  background: url("../img/backgrounds/bg3.jpg") center center/cover no-repeat;
+  padding-top: 71px;
 }
 
 .advantages__block {
@@ -235,13 +237,19 @@ h2 {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 20px;
+}
+
+.advantages__block__items_text a {
+  color: #c70101;
+}
+
+.advantages__block__items_text a:hover {
+  text-decoration: none;
 }
 
 .advantages__title {
   color: #000;
   text-align: center;
-  margin-top: 71px;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;

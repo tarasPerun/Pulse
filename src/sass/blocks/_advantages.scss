@@ -1,5 +1,7 @@
 .advantages {
     min-height: 470px;
+    background: url('../img/backgrounds/bg3.jpg') center (center / cover) no-repeat; 
+    padding-top: 71px;
     &__block {
         display: flex;
         justify-content: space-between;
@@ -24,14 +26,19 @@
                 font-weight: 300;
                 font-size: 14px;
                 line-height: 18px;
-                margin-top: 20px;
+                a {
+                    color: $main-color;
+                    
+                    }
+                a:hover {
+                    text-decoration: none;
+                 }
             }
         }
     }
     &__title {
         color: #000;
         text-align: center;
-        margin-top: 71px;
         font-weight: 700;
         font-size: 30px;
         line-height: 30px;
